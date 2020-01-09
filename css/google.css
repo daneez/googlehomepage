@@ -1,24 +1,35 @@
 body{
     margin: 8px;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-}
+
 .container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    align-content: center;
+    align-content: space-between;
 }
-.nav .footer{
-    float: inline-start;
-    font-size: 20px;
+
+.navigationbar{
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    display: flex;
 }
+
+.nav{
+    padding:0px 15px;
+    width: auto;
+    color: #000;
+    opacity: 0.75;
+}
+
+.large{
+    flex-grow: 1;
+}
+
 a{
     text-decoration: none;
     display: inline-block;
@@ -26,19 +37,9 @@ a{
     opacity: 0.75;
     font-family: arial,sans-serif;
     font-size: 13px;
+    flex-wrap: nowrap;
 }
-.leftnav{
-    float: left;
-    padding-left: 15px;
-    color: #000;
-    opacity: 0.75;
-}
-.rightnav{
-    float: right;
-    color: #000;
-    padding-right: 15px;
-    text-align: right;
-}
+
 .body--logo-center{
     height: 233px;
     text-align: -webkit-center;
@@ -122,11 +123,12 @@ button.searchicon{
     line-height: 41px;
     display: block;
 }
-#bottom{
+.bottom{
+    width: 100%;
     border-top: 1px solid #E4E4E4;
     background-color: #F2F2F2;
-    padding-left: 8px;
+    padding:0 8px;
     text-align: left;
-    display: block;
+    display: flex;
 }
 
