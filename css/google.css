@@ -8,11 +8,18 @@ ul{
     overflow: hidden;
     text-align: center;
 }
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
 .nav .footer{
     float: inline-start;
     font-size: 20px;
 }
-li a{
+a{
     text-decoration: none;
     display: inline-block;
     color: #000;
